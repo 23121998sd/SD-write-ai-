@@ -45,7 +45,7 @@ export const HomePage = () => {
               <Sparkles className="w-6 h-6 text-white" />
             </div>
             <span className="text-2xl font-bold bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent">
-              WriteAI Pro
+              SDWrite AI
             </span>
           </div>
 
@@ -303,7 +303,7 @@ export const HomePage = () => {
               See How We <span className="bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent">Stack Up</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Compare WriteAI Pro with leading competitors
+              Compare SDWrite AI with leading competitors
             </p>
           </div>
 
@@ -458,10 +458,10 @@ export const HomePage = () => {
                 <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-600 to-blue-600 flex items-center justify-center">
                   <Sparkles className="w-5 h-5 text-white" />
                 </div>
-                <span className="text-xl font-bold text-white">WriteAI Pro</span>
+                <span className="text-xl font-bold text-white">SDWrite AI</span>
               </div>
               <p className="text-sm leading-relaxed">
-                The most powerful AI writing assistant for content creators, marketers, and businesses.
+                SDWrite AI - The most powerful AI writing assistant for content creators, marketers, and businesses.
               </p>
             </div>
             <div>

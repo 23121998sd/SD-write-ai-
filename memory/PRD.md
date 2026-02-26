@@ -1,4 +1,4 @@
-# WriteAI Pro - AI Writing Assistant SaaS Landing Page
+# SDWrite AI - AI Writing Assistant SaaS Landing Page
 **Product Requirements Document**
 
 ## Original Problem Statement

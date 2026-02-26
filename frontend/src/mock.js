@@ -75,7 +75,7 @@ export const competitorComparison = {
   ],
   competitors: [
     {
-      name: "WriteAI Pro",
+      name: "SDWrite AI",
       values: ["⭐⭐⭐⭐⭐", "100,000", "20+", "✓", "✓", "✓", "✓", "✓", "$79"]
     },
     {
@@ -105,7 +105,7 @@ export const testimonials = [
     company: "TechCorp",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400",
     rating: 5,
-    text: "WriteAI Pro has transformed our content creation process. We've increased our output by 300% while maintaining quality. The AI suggestions are incredibly accurate."
+    text: "SDWrite AI has transformed our content creation process. We've increased our output by 300% while maintaining quality. The AI suggestions are incredibly accurate."
   },
   {
     id: 2,
@@ -123,7 +123,7 @@ export const testimonials = [
     company: "GrowthLabs",
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400",
     rating: 5,
-    text: "The team collaboration features are amazing. Our entire marketing team uses it daily. It's like having an expert copywriter available 24/7."
+    text: "SDWrite AI's team collaboration features are amazing. Our entire marketing team uses it daily. It's like having an expert copywriter available 24/7."
   },
   {
     id: 4,
@@ -132,7 +132,7 @@ export const testimonials = [
     company: "Digital Trends",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400",
     rating: 5,
-    text: "I was skeptical about AI writing tools, but WriteAI Pro proved me wrong. It doesn't replace writers—it makes us better and faster."
+    text: "I was skeptical about AI writing tools, but SDWrite AI proved me wrong. It doesn't replace writers—it makes us better and faster."
   },
   {
     id: 5,
@@ -169,7 +169,7 @@ export const writingTools = [
     description: "Create compelling ads and marketing content",
     icon: "Megaphone",
     placeholder: "Describe your product/service...",
-    exampleOutput: "🚀 Transform Your Writing in Minutes, Not Hours\n\nTired of staring at a blank page? WriteAI Pro uses advanced AI to help you create stunning content 10x faster.\n\n✨ What You Get:\n• Professional-quality content in seconds\n• SEO-optimized for maximum reach\n• 20+ specialized writing tools\n• Team collaboration features\n\n💎 Join 50,000+ writers who've already made the switch.\n\n👉 Start your free 14-day trial—no credit card required!"
+    exampleOutput: "🚀 Transform Your Writing in Minutes, Not Hours\n\nTired of staring at a blank page? SDWrite AI uses advanced AI to help you create stunning content 10x faster.\n\n✨ What You Get:\n• Professional-quality content in seconds\n• SEO-optimized for maximum reach\n• 20+ specialized writing tools\n• Team collaboration features\n\n💎 Join 50,000+ writers who've already made the switch.\n\n👉 Start your free 14-day trial—no credit card required!"
   },
   {
     id: "email-writer",
@@ -185,7 +185,7 @@ export const writingTools = [
     description: "Enhance and polish your existing content",
     icon: "Sparkles",
     placeholder: "Paste your content to improve...",
-    exampleOutput: "BEFORE:\nOur product is good and helps people write better. It has many features.\n\nAFTER:\nOur revolutionary AI-powered platform transforms the way professionals create content. With over 20 specialized writing tools, advanced SEO optimization, and real-time collaboration features, we empower writers to produce exceptional content 10x faster—without compromising quality.\n\nKey benefits:\n✓ Save 15+ hours per week\n✓ Boost content quality by 300%\n✓ Scale your content production effortlessly"
+    exampleOutput: "BEFORE:\nOur product is good and helps people write better. It has many features.\n\nAFTER:\nSDWrite AI's revolutionary platform transforms the way professionals create content. With over 20 specialized writing tools, advanced SEO optimization, and real-time collaboration features, we empower writers to produce exceptional content 10x faster—without compromising quality.\n\nKey benefits:\n✓ Save 15+ hours per week\n✓ Boost content quality by 300%\n✓ Scale your content production effortlessly"
   },
   {
     id: "social-media",
@@ -206,11 +206,11 @@ export const writingTools = [
 ];
 
 export const chatbotResponses = {
-  greeting: "Hello! 👋 I'm your AI writing assistant. How can I help you today? I can answer questions about our features, pricing, or help you get started!",
+  greeting: "Hello! 👋 I'm your SDWrite AI assistant. How can I help you today? I can answer questions about our features, pricing, or help you get started!",
   pricing: "We offer three pricing tiers:\n\n💫 Starter ($29/mo) - Perfect for individuals\n🚀 Pro ($79/mo) - Best for professionals (Most Popular!)\n🏢 Enterprise (Custom) - For large teams\n\nAll plans include a 14-day free trial. Would you like to know more about a specific plan?",
   features: "WriteAI Pro offers 20+ AI-powered writing tools including:\n\n📝 Blog Post Generator\n📧 Email Writer\n📱 Social Media Posts\n✨ Content Improver\n🛍️ Product Descriptions\n📊 SEO Optimization\n🔍 Plagiarism Checker\n👥 Team Collaboration\n\nWhat would you like to know more about?",
   trial: "Great choice! 🎉 Our 14-day free trial includes:\n\n✓ Access to all Pro features\n✓ 10,000 words to test\n✓ No credit card required\n✓ Cancel anytime\n✓ Full customer support\n\nReady to start? Click the 'Start Free Trial' button on any pricing card!",
-  comparison: "WriteAI Pro stands out because:\n\n✅ Better AI quality than competitors\n✅ More affordable ($79 vs $99+ for similar features)\n✅ Custom AI training (Enterprise only)\n✅ Superior customer support\n✅ No hidden fees or usage caps\n\nWant to see a detailed comparison table?",
+  comparison: "SDWrite AI stands out because:\n\n✅ Better AI quality than competitors\n✅ More affordable ($79 vs $99+ for similar features)\n✅ Custom AI training (Enterprise only)\n✅ Superior customer support\n✅ No hidden fees or usage caps\n\nWant to see a detailed comparison table?",
   default: "That's a great question! Our AI writing assistant can help you with:\n\n• Creating any type of content\n• Improving existing writing\n• SEO optimization\n• Team collaboration\n\nCould you be more specific about what you'd like to know? Or type 'pricing', 'features', or 'trial' for quick info!"
 };
 
@@ -273,7 +273,7 @@ export const faqs = [
   },
   {
     question: "How is this different from ChatGPT?",
-    answer: "While we use similar AI technology, WriteAI Pro is specifically optimized for content creation with specialized tools, templates, SEO optimization, team collaboration, and professional formatting—all in one platform."
+    answer: "While we use similar AI technology, SDWrite AI is specifically optimized for content creation with specialized tools, templates, SEO optimization, team collaboration, and professional formatting—all in one platform."
   },
   {
     question: "Do you offer refunds?",
