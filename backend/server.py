@@ -25,12 +25,14 @@ db = client[os.environ['DB_NAME']]
 # Import payment routes after environment is loaded
 try:
     from routes.payments import router as payments_router
+    from routes.manual_payments import router as manual_payments_router
     PAYMENTS_ENABLED = True
 except Exception as e:
     logger = logging.getLogger(__name__)
     logger.warning(f"Payment routes not loaded: {e}")
     PAYMENTS_ENABLED = False
     payments_router = None
+    manual_payments_router = None
 
 # Create the main app without a prefix
 app = FastAPI()
@@ -83,6 +85,8 @@ async def get_status_checks():
 app.include_router(api_router)
 if PAYMENTS_ENABLED and payments_router:
     app.include_router(payments_router)
+if PAYMENTS_ENABLED and manual_payments_router:
+    app.include_router(manual_payments_router)
 
 app.add_middleware(
     CORSMiddleware,
