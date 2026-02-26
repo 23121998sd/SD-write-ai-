@@ -21,19 +21,19 @@ db_name = os.environ.get('DB_NAME', 'sdwrite')
 mongo_client = AsyncIOMotorClient(mongo_url)
 db = mongo_client[db_name]
 
-# Bank and UPI details (Update these with your actual details)
+# Bank and UPI details (Real account details)
 BANK_DETAILS = BankDetails(
-    account_name="SDWrite AI",
-    account_number="1234567890",
-    ifsc_code="SBIN0001234",
-    bank_name="State Bank of India",
-    branch="Mumbai Main Branch",
-    account_type="Current Account"
+    account_name="RUBI SHARMA",
+    account_number="3245610539",
+    ifsc_code="KKBK0004333",
+    bank_name="Kotak Mahindra Bank",
+    branch="HISAR (Branch Code: 4333)",
+    account_type="Savings Account"
 )
 
 UPI_DETAILS = UPIDetails(
-    upi_id="sdwrite@paytm",
-    upi_name="SDWrite AI",
+    upi_id="9467016116@paytm",  # Update this with your actual UPI ID
+    upi_name="RUBI SHARMA",
     qr_code_url=None  # You can add QR code image URL later
 )
 
