@@ -10,9 +10,9 @@ import {
   ChevronDown, Check
 } from 'lucide-react';
 import { pricingPlans, testimonials, features, stats, competitorComparison, faqs } from '../mock';
-import { LiveDemo } from './LiveDemo';
-import { Chatbot } from './Chatbot';
-import { useTheme } from './ThemeProvider';
+import { LiveDemo } from '../components/LiveDemo';
+import { Chatbot } from '../components/Chatbot';
+import { useTheme } from '../components/ThemeProvider';
 import { toast } from 'sonner';
 
 const iconMap = {
