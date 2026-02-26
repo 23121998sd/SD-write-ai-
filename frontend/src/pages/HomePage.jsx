@@ -355,7 +355,7 @@ export const HomePage = () => {
               Loved by <span className="bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent">50,000+ Users</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              See what content creators are saying about WriteAI Pro
+              See what content creators are saying about SDWrite AI
             </p>
           </div>
 
