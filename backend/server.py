@@ -9,7 +9,10 @@ from pydantic import BaseModel, Field, ConfigDict
 from typing import List
 import uuid
 from datetime import datetime, timezone
+import sys
 
+# Add backend directory to path for imports
+sys.path.insert(0, str(Path(__file__).parent))
 
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
@@ -18,6 +21,16 @@ load_dotenv(ROOT_DIR / '.env')
 mongo_url = os.environ['MONGO_URL']
 client = AsyncIOMotorClient(mongo_url)
 db = client[os.environ['DB_NAME']]
+
+# Import payment routes after environment is loaded
+try:
+    from routes.payments import router as payments_router
+    PAYMENTS_ENABLED = True
+except Exception as e:
+    logger = logging.getLogger(__name__)
+    logger.warning(f"Payment routes not loaded: {e}")
+    PAYMENTS_ENABLED = False
+    payments_router = None
 
 # Create the main app without a prefix
 app = FastAPI()
@@ -68,7 +81,8 @@ async def get_status_checks():
 
 # Include the router in the main app
 app.include_router(api_router)
-app.include_router(payments_router)
+if PAYMENTS_ENABLED and payments_router:
+    app.include_router(payments_router)
 
 app.add_middleware(
     CORSMiddleware,
