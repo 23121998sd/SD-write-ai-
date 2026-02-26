@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { writingTools } from '../mock';
-import { Button } from './ui/button';
-import { Textarea } from './ui/textarea';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
+import { Button } from '../components/ui/button';
+import { Textarea } from '../components/ui/textarea';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs';
 import { FileText, Mail, Sparkles, Share2, ShoppingCart, Megaphone, Loader2, Copy, Check } from 'lucide-react';
 import { toast } from 'sonner';
 

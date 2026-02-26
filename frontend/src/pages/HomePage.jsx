@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Button } from './ui/button';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from './ui/card';
-import { Badge } from './ui/badge';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion';
-import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
+import { Button } from '../components/ui/button';
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '../components/ui/card';
+import { Badge } from '../components/ui/badge';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../components/ui/accordion';
+import { Avatar, AvatarFallback, AvatarImage } from '../components/ui/avatar';
 import { 
   ArrowRight, CheckCircle2, Sparkles, Zap, Users, Shield, TrendingUp, Globe,
   Star, Moon, Sun, Menu, X as CloseIcon, FileText, Mail, ShoppingCart, Share2,
