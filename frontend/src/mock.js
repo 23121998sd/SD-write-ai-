@@ -2,7 +2,7 @@
 
 export const pricingPlans = [
   {
-    id: 1,
+    id: "starter",
     name: "Starter",
     price: "$29",
     period: "/month",
@@ -19,7 +19,7 @@ export const pricingPlans = [
     cta: "Start Free Trial"
   },
   {
-    id: 2,
+    id: "pro",
     name: "Pro",
     price: "$79",
     period: "/month",
@@ -39,7 +39,7 @@ export const pricingPlans = [
     cta: "Start Free Trial"
   },
   {
-    id: 3,
+    id: "enterprise",
     name: "Enterprise",
     price: "Custom",
     period: "",

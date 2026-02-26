@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Button } from '../components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
@@ -22,6 +23,7 @@ const iconMap = {
 export const HomePage = () => {
   const { theme, toggleTheme } = useTheme();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
@@ -29,10 +31,16 @@ export const HomePage = () => {
     setMobileMenuOpen(false);
   };
 
-  const handleCTAClick = (planName) => {
-    toast.success(`🎉 Great choice! Starting your ${planName} trial...`, {
-      description: 'Redirecting to signup page...'
-    });
+  const handleCTAClick = (planName, planId) => {
+    if (planId === 'enterprise') {
+      toast.info('Please contact sales for Enterprise plan', {
+        description: 'Email: sales@sdwrite.ai'
+      });
+      return;
+    }
+    
+    // Navigate to Indian payment page
+    navigate(`/indian-payment?package=${planId}`);
   };
 
   return (
@@ -276,7 +284,7 @@ export const HomePage = () => {
                 </CardContent>
                 <CardFooter>
                   <Button 
-                    onClick={() => handleCTAClick(plan.name)}
+                    onClick={() => handleCTAClick(plan.name, plan.id)}
                     className={`w-full py-6 text-base font-semibold ${
                       plan.highlighted
                         ? 'bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white shadow-lg'
